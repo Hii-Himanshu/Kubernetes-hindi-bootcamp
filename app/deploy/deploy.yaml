@@ -14,13 +14,13 @@ spec:
     spec:
       containers:
       - name: my-app
-        image: hustlerhimanshu/kubesimplify-demo:sha-46fc953
+        image: hustlerhimanshu/kubesimplify-demo:sha-1656058
         imagePullPolicy: Always
         env:
         - name: DB_USERNAME
           valueFrom:
             secretKeyRef:
-              name: postgresql-credentials
+              name: my-postgresql-credentials
               key: username
         - name: DB_PASSWORD
           valueFrom:
