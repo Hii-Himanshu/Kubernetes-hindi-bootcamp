@@ -20,7 +20,7 @@ spec:
         - name: DB_USERNAME
           valueFrom:
             secretKeyRef:
-              name: postgresql-credentials
+              name: my-postgresql-credentials
               key: username
         - name: DB_PASSWORD
           valueFrom:
